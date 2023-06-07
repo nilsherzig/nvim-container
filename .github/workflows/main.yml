@@ -3,10 +3,10 @@ name: nvim container build script
 on:
   push:
     paths:
-      - docker-compose.yml
-      - Dockerfile
-      - entrypoint.sh
-        # branches: [ main ]
+      - ./docker-compose.yml
+      - ./Dockerfile
+      - ./entrypoint.sh
+      - ./.github
   pull_request:
     branches: [ main ]
       
