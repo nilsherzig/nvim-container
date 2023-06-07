@@ -1,4 +1,4 @@
-# wip!
+## run
 
 run using the following command:
 
@@ -17,12 +17,21 @@ docker run -it \
 
 I would recommend to alias this large command to `nvim`.
 
-# installs
+## autoupdates
+
+Will pull current config in background on startup. 
+Default is nilsherzig/nvim-config, but you can change the url using env vars:
+
+```
+--env CONFIGS=https://github.com/nilsherzig/nvim-config
+```
+
+## installs
 
 - neovim 
 - git
 
-# lsp support out of the box
+## lsp support out of the box
 
 - java 
 - rust 
@@ -30,6 +39,6 @@ I would recommend to alias this large command to `nvim`.
 - bash 
 - python
 
-# dap support out of the box
+## dap support out of the box
 
 - go
