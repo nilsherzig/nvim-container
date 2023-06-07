@@ -1,1 +1,0 @@
-require("nils_config")
