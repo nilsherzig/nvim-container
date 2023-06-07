@@ -6,7 +6,6 @@ on:
       - docker-compose.yml
       - Dockerfile
       - entrypoint.sh
-      - run.sh
         # branches: [ main ]
   pull_request:
     branches: [ main ]
