@@ -15,9 +15,9 @@ RUN useradd --create-home --shell /bin/bash -g nvimgroup nvim
 
 WORKDIR /home/nvim/workdir/
 
-COPY ./config /home/nvim/.config/nvim
+ADD ./config /home/nvim/.config/nvim
 
-COPY entrypoint.sh /entrypoint.sh
+ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/bin/sh", "entrypoint.sh"]
 
-CMD echo -e "please run like this:\n'docker run -it -v ~/nvim_cache:/root/.local/share/nvim -v $PWD:/workdir nilsherzig/nvim_container nvim'"
+CMD echo -e "please run via -it (check repo for more details)"
