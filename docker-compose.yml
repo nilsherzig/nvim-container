@@ -1,0 +1,5 @@
+services:
+  nvim_container:
+    image: nilsherzig/nvim_container
+    build:
+      dockerfile: ./Dockerfile
