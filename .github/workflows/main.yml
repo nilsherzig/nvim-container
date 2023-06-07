@@ -1,4 +1,4 @@
-name: Python application
+name: nvim container build script
 
 on:
   push:

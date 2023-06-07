@@ -9,6 +9,7 @@ RUN pacman -S --noconfirm python3
 RUN pacman -S --noconfirm go
 RUN pacman -S --noconfirm unzip
 RUN pacman -S --noconfirm ripgrep
+RUN pacman -S --noconfirm openssh
 
 RUN groupadd nvimgroup
 RUN useradd --create-home --shell /bin/bash -g nvimgroup nvim 

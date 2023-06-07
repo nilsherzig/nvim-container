@@ -10,7 +10,6 @@ lsp.ensure_installed({
 	"tsserver",
 	"rust_analyzer",
 	"lua_ls",
-	"nil_ls",
 	"marksman",
     "jdtls",
 	"gradle_ls",
@@ -18,15 +17,8 @@ lsp.ensure_installed({
 	"docker_compose_language_service",
 	"dockerls",
 	"ruff_lsp",
-    "gopls" 
+    "gopls"
 })
-
--- require('lspconfig').gopls.setup{}  -- installed via nixpkgs
--- require('lspconfig').bashls.setup{} -- installed via nixpkgs
--- require('lspconfig').lua_ls.setup{} -- installed via nixpkgs
--- require('lspconfig').nil_ls.setup{} -- installed via nixpkgs
--- require('lspconfig').rust_analyzer.setup{} -- installed via nixpkgs
--- require('lspconfig').jdtls.setup{}  -- installed via nixpkgs
 
 -- Fix Undefined global 'vim'
 lsp.nvim_workspace()
