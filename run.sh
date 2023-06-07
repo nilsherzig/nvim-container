@@ -1,1 +1,1 @@
-docker run -it -v ~/nvim_cache:/root/.local/share/nvim -v $PWD:/workdir nilsherzig/nvim_container nvim
+docker run -it --env UID=$UID --env GUI=$GID -v ~/nvim_cache:/home/nvim/.local/share/nvim -v $PWD:/home/nvim/workdir nilsherzig/nvim-container nvim
