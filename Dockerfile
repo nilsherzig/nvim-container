@@ -15,9 +15,9 @@ RUN useradd --create-home --shell /bin/bash -g nvimgroup nvim
 
 WORKDIR /home/nvim/workdir/
 
-ADD ./config /home/nvim/.config/nvim
+COPY ./config /home/nvim/.config/nvim
 
-ADD entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/bin/sh", "entrypoint.sh"]
+COPY entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/bin/sh", "/entrypoint.sh"]
 
 CMD echo -e "please run via -it (check repo for more details)"
